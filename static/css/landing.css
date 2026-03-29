@@ -1,0 +1,138 @@
+/* ------------------------------------------------------------------ */
+/* Hero — centered single-column layout                                */
+/* ------------------------------------------------------------------ */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.hero-inner {
+    width: 100%;
+    max-width: 640px;
+}
+
+.hero-subtitle {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.hero-actions {
+    justify-content: center;
+}
+
+.hero-visual {
+    width: 100%;
+    max-width: 680px;
+    display: block;
+}
+
+/* ------------------------------------------------------------------ */
+/* Badge dot                                                           */
+/* ------------------------------------------------------------------ */
+
+.badge-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Mock card — browser window style                                    */
+/* ------------------------------------------------------------------ */
+
+.mock-card {
+    max-width: none;
+    background: var(--paper-warm);
+}
+
+.mock-window-dots {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red       { background: #ff5f57; }
+.dot-yellow    { background: #febc2e; }
+.dot-green-dot { background: #28c840; }
+
+/* ------------------------------------------------------------------ */
+/* Mock metrics row                                                    */
+/* ------------------------------------------------------------------ */
+
+.mock-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    background: var(--paper-card);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.mock-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.mock-metric-mid {
+    border-left: 1px solid var(--border-soft);
+    border-right: 1px solid var(--border-soft);
+    padding: 0 1.25rem;
+}
+
+.mock-metric-end {
+    padding-left: 1.25rem;
+}
+
+.mock-metric-val {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--ink);
+    line-height: 1.2;
+}
+
+.mock-metric-label {
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+}
+
+.mock-metric-sub {
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+}
+
+.mock-sub-danger  { color: var(--danger); }
+.mock-sub-success { color: var(--accent); }
+
+/* ------------------------------------------------------------------ */
+/* Mock bar rows — slim card                                           */
+/* ------------------------------------------------------------------ */
+
+.mock-bars-card {
+    background: var(--paper-card);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+}
+
+.mock-bar-row-slim {
+    grid-template-columns: 80px 1fr;
+}
